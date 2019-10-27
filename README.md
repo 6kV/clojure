@@ -38,3 +38,8 @@ All clojure's data structures are immutable
 #### Set
 
 `#{1 2 3}`
+
+#### Anonymous function
+
+`(fn [x] (str "hello" " world")`
+
