@@ -31,3 +31,10 @@ All clojure's data structures are immutable
 
 ` [1 2 3]`
 
+#### Lists
+
+`'(1 2 3)`
+
+#### Set
+
+`#{1 2 3}`
