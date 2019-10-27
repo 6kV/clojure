@@ -78,3 +78,18 @@ let forms have two main uses. First, they provide clarity by allowing you to nam
 regular expression are tools for performing pattern matching on Text.
 `(re-find #"^left-" "left-eye")`
 
+#### Reduce
+
+The pattern of process each element in a sequence and build a result is so com-
+mon that there’s a built-in function for it called reduce . Here’s a simple
+example:
+`
+;; sum with reduce
+(reduce + [1 2 3 4])
+; => 10
+`
+
+This is like telling Clojure to do this:
+
+`(+ (+ (+ 1 2) 3) 4)`
+
