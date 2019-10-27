@@ -43,3 +43,15 @@ All clojure's data structures are immutable
 
 `(fn [x] (str "hello" " world")`
 
+#### Returned Function 
+functions can return other functions. The returned functions are closures, which means that they can access all the variables that were in scope when the function was created
+
+`
+(defn inc-maker<br/>  
+"Create a custom incrementor"  
+[inc-by]  
+#(+ % inc-by))  
+(def inc3 (inc-maker 3))  
+(inc3 7)  
+; => 10  
+`
